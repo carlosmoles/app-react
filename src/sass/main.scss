@@ -1,0 +1,31 @@
+body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main{
+  width: 100%;
+  min-height:100vh;
+  max-width: 1920px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #dedede;
+  .content-principal{
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 100px;
+  }
+}

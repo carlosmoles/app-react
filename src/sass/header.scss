@@ -1,0 +1,234 @@
+.App-header{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
+  .App-btn-menu{
+    width: 10%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .App-logo{
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    .logo{
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+  }
+  .App-menu{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    .item{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333333;
+      padding: 10px 15px;
+    }
+    .item:hover{
+      border-bottom: 3px solid #333333;
+    }
+  }
+  .App-actions{
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    .action{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/*************** ANIMACION TOGLE BUTTON******************/
+.btn-menu{
+  position:relative;
+  z-index:1111;
+  height:45px;
+  width:60px;
+  padding:0px 0px 0px 5px;
+  cursor: pointer;
+}
+
+.btn-menu span {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.btn-menu span, .btn-menu span::before, .btn-menu span::after {
+  display: block;
+  width: 40px;
+  left: 0px;
+  height: 5px;
+  background-color: #bfbfbf;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.btn-menu span::before, .btn-menu span::after {
+  position: absolute;
+  content: "";
+}
+.btn-menu span::before {
+  top: -12px;
+  width:40px;
+  border-radius: 10px;
+}
+.btn-menu span::after {
+  top: 12px;
+  width: 40px;
+  border-radius: 10px;
+}
+.btn-menu.clicked span {
+  background-color: transparent;
+}
+.btn-menu.clicked span::before {
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -moz-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  -o-transform: translateY(12px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
+  width: 40px;
+}
+.btn-menu.clicked span::after {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -o-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
+}
+.btn-menu.clicked span:before, .menu.clicked span:after {
+  background-color: #bfbfbf;
+}
+.btn-menu:hover {
+  cursor: pointer;
+}
+/*************** FIN ANIMACION TOGLE BUTTON******************/
+
+@media screen and (max-width: 768px){
+  .App-header {
+    max-height: 50px;
+    z-index: 2;
+    .App-btn-menu {
+      display: flex;
+      position: absolute;
+      left: 0px;
+    }
+    .img-logo{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .logo{
+        max-height: 50px;
+      }
+    }
+    .App-menu{
+      width: 100%;
+      position: fixed;
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -moz-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -o-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      height: 100vh;
+      background-color: #ffffff;
+      z-index: 3;
+      top: 60px;
+      left:0px;
+      align-content: flex-start;
+      justify-content: space-around;
+      padding: 10px;
+      .item{
+        width: 48%;
+        min-height: 80px;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        border: #d2d2d2 1px solid;
+        border-radius: 2px;
+        margin: 1%;
+        span{
+          width: 100%;
+          margin-top: 5px;
+          text-align: center;
+          font-size: 0.9rem;
+        }
+      }
+      .idiomas{
+        width: 100%;
+        padding: 5px;
+      }
+    }
+    .App-menu.show{
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -moz-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -o-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .App-actions{
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: #2a8daa;
+      padding: 0px 20px;
+      .action{
+        cursor: pointer;
+      }
+    }
+  }
+}
