@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/header.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/header.scss" afterDir="false" />
     </list>
@@ -80,11 +79,23 @@
       <workItem from="1612526899697" duration="3110000" />
       <workItem from="1612771743501" duration="9666000" />
       <workItem from="1612858380099" duration="2031000" />
-      <workItem from="1612866152891" duration="7143000" />
+      <workItem from="1612866152891" duration="7914000" />
     </task>
+    <task id="LOCAL-00001" summary="header">
+      <created>1612890992479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612890992479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="header" />
+    <option name="LAST_COMMIT_MESSAGE" value="header" />
   </component>
 </project>

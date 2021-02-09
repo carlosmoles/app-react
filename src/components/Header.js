@@ -29,14 +29,9 @@ const Header = ({itemsMenu}) => {
                     <div className="idioma" data-idioma="2">PT</div>
                 </div>
             </div>
-            <div className="App-buscador">
-                <div className="buscador"><IconSearch width="30px" height="30px" fill="#2a8daa" /></div>
-            </div>
-
-            <div className="App-action">
+            <div className="App-actions">
+                <div className="action"><IconSearch width="30px" height="30px" fill="#2a8daa" /></div>
                 <div className="action"><IconUser width="30px" height="30px" fill="#2a8daa" /></div>
-            </div>
-            <div className="">
                 <div className="action"><IconCart width="30px" height="30px" fill="#2a8daa" /></div>
                 <div className="action"><IconFavorite width="30px" height="30px" fill="#2a8daa" /></div>
                 <div  className="App-btn-menu">
