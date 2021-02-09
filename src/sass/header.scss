@@ -7,19 +7,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 5px;
+  padding: 0px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
-  .App-btn-menu{
-    width: 10%;
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  z-index: 2;
   .App-logo{
-    width: 15%;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,34 +26,108 @@
     }
   }
   .App-menu{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    .item{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      font-weight: 600;
-      color: #333333;
-      padding: 10px 15px;
-    }
-    .item:hover{
-      border-bottom: 3px solid #333333;
-    }
-  }
-  .App-actions{
-    width: 15%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0px 10px;
-    .action{
+    .itemsMenu{
+      width: 85%;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      .item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 600;
+        color: #333333;
+        padding: 10px 15px;
+        .iconItem{
+          display: none;
+        }
+        .nomItem{
+          width: 100%;
+        }
+      }
+      .item:hover{
+        border-bottom: 3px solid #333333;
+      }
+    }
+
+    .idiomas{
+      width: 13%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0px 10px;
+      margin-left:2%;
+      box-sizing: border-box;
+      .idioma{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        color: #333333;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 1%;
+      }
+      .idioma:hover{
+        background-color: #2a8daa;
+        color: #ffffff;
+      }
+    }
+  }
+  .App-buscador{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .buscador{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .App-actions{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .action{
+      width: 25%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 10px;
+      box-sizing: border-box;
+      border-left: 2px solid #e7e7e7;
+    }
+    .action:hover{
+      background-color: #2a8daa;
+      cursor: pointer;
+      svg{
+        fill: #ffffff;
+      }
+    }
+    .App-btn-menu{
+      width: 10%;
+      display: none;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -71,8 +139,8 @@
 .btn-menu{
   position:relative;
   z-index:1111;
-  height:45px;
-  width:60px;
+  height:35px;
+  width:50px;
   padding:0px 0px 0px 5px;
   cursor: pointer;
 }
@@ -91,9 +159,9 @@
 
 .btn-menu span, .btn-menu span::before, .btn-menu span::after {
   display: block;
-  width: 40px;
+  width: 35px;
   left: 0px;
-  height: 5px;
+  height: 3px;
   background-color: #bfbfbf;
   outline: 1px solid transparent;
   -webkit-transition-property: background-color, -webkit-transform;
@@ -110,32 +178,32 @@
   content: "";
 }
 .btn-menu span::before {
-  top: -12px;
-  width:40px;
+  top: -10px;
+  width:35px;
   border-radius: 10px;
 }
 .btn-menu span::after {
-  top: 12px;
-  width: 40px;
+  top: 10px;
+  width: 35px;
   border-radius: 10px;
 }
 .btn-menu.clicked span {
   background-color: transparent;
 }
 .btn-menu.clicked span::before {
-  -webkit-transform: translateY(12px) rotate(45deg);
-  -moz-transform: translateY(12px) rotate(45deg);
-  -ms-transform: translateY(12px) rotate(45deg);
-  -o-transform: translateY(12px) rotate(45deg);
-  transform: translateY(12px) rotate(45deg);
-  width: 40px;
+  -webkit-transform: translateY(10px) rotate(45deg);
+  -moz-transform: translateY(10px) rotate(45deg);
+  -ms-transform: translateY(10px) rotate(45deg);
+  -o-transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
+  width: 35px;
 }
 .btn-menu.clicked span::after {
-  -webkit-transform: translateY(-12px) rotate(-45deg);
-  -moz-transform: translateY(-12px) rotate(-45deg);
-  -ms-transform: translateY(-12px) rotate(-45deg);
-  -o-transform: translateY(-12px) rotate(-45deg);
-  transform: translateY(-12px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -moz-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 .btn-menu.clicked span:before, .menu.clicked span:after {
   background-color: #bfbfbf;
@@ -145,22 +213,19 @@
 }
 /*************** FIN ANIMACION TOGLE BUTTON******************/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 960px){
   .App-header {
-    max-height: 50px;
+    height: auto;
     z-index: 2;
-    .App-btn-menu {
-      display: flex;
-      position: absolute;
-      left: 0px;
-    }
-    .img-logo{
-      width: 100%;
+    .App-logo{
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
+      padding: 0px 0px 0px 5px;
       .logo{
-        max-height: 50px;
+        width: auto;
+        max-height: 30px;
       }
     }
     .App-menu{
@@ -178,7 +243,7 @@
       height: 100vh;
       background-color: #ffffff;
       z-index: 3;
-      top: 60px;
+      top: 80px;
       left:0px;
       align-content: flex-start;
       justify-content: space-around;
@@ -195,7 +260,10 @@
         border: #d2d2d2 1px solid;
         border-radius: 2px;
         margin: 1%;
-        span{
+        .iconItem{
+          display: block;
+        }
+        .nomItem{
           width: 100%;
           margin-top: 5px;
           text-align: center;
@@ -218,16 +286,37 @@
       -o-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
-    .App-actions{
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      width: 100%;
-      height: 50px;
-      background-color: #2a8daa;
-      padding: 0px 20px;
-      .action{
+    .App-buscador{
+      width: 50px;
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .buscador{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
+      }
+    }
+    .App-actions{
+      width: 100%;
+      height: 40px;
+      background-color: #ffffff;
+      padding: 0px 0px;
+      .action{
+        width: 20%;
+        cursor: pointer;
+        border: 0px;
+        svg{
+          width: 25px;
+        }
+      }
+      .App-btn-menu {
+        width: 20%;
+        display: flex;
+
       }
     }
   }

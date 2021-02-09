@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import logo from '../images/logo.png'
+import logo from '../images/logos/logo.jpg'
 import { ReactComponent as IconCart } from '../images/iconos/shopping_cart.svg'
 import { ReactComponent as IconFavorite } from '../images/iconos/favorite.svg'
 import { ReactComponent as IconUser }  from '../images/iconos/user.svg'
@@ -12,30 +12,38 @@ const Header = ({itemsMenu}) => {
     return (
     <Fragment>
         <header className="App-header">
-            <div  className="App-btn-menu">
-                <div className="btn-menu" onClick={openMenu}>
-                    <span></span>
-                </div>
-            </div>
-            <Link to={"/"} className="img-logo">
+            <Link to={"/"} className="App-logo">
               <img className="logo" src={logo} alt=""/>
             </Link>
             <div className="App-menu">
-                {itemsMenu.data.map((item) => (
-                    <Link key={item.id.toString()} to={`/${item.link}`} className="item">
-                        <DefImg width="40px" height="40px" fill="#333333" />
-                        <span>{item.nombre}</span>
-                    </Link>
-                ))}
+                <div className="itemsMenu">
+                    {itemsMenu.data.map((item) => (
+                        <Link key={item.id.toString()} to={`/${item.link}`} className="item">
+                            <DefImg className="iconItem" width="40px" height="40px" fill="#333333" />
+                            <span className="nomItem">{item.nombre}</span>
+                        </Link>
+                    ))}
+                </div>
                 <div className="idiomas">
-                    Idioma
+                    <div className="idioma" data-idioma="1">ES</div>
+                    <div className="idioma" data-idioma="2">PT</div>
                 </div>
             </div>
-            <div className="App-actions">
-                <div className="action lang"><IconSearch width="30px" height="30px" fill="#ffffff" /></div>
-                <div className="action user"><IconUser width="30px" height="30px" fill="#ffffff" /></div>
-                <div className="action lang"><IconFavorite width="30px" height="30px" fill="#ffffff" /></div>
-                <div className="action cart"><IconCart width="30px" height="30px" fill="#ffffff" /></div>
+            <div className="App-buscador">
+                <div className="buscador"><IconSearch width="30px" height="30px" fill="#2a8daa" /></div>
+            </div>
+
+            <div className="App-action">
+                <div className="action"><IconUser width="30px" height="30px" fill="#2a8daa" /></div>
+            </div>
+            <div className="">
+                <div className="action"><IconCart width="30px" height="30px" fill="#2a8daa" /></div>
+                <div className="action"><IconFavorite width="30px" height="30px" fill="#2a8daa" /></div>
+                <div  className="App-btn-menu">
+                    <div className="btn-menu" onClick={openMenu}>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </header>
     </Fragment>

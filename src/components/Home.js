@@ -9,13 +9,9 @@ const Home = () => {
         <div className="content-principal">
             <div className="slideHome">
                 <OwlCarousel items={3} className="owl-theme" loop nav  margin={8}>
-                    <div><img className="img" src= {require(`./images/404.png`)}/></div>
-                    <div><img className="img" src= {'assets/img/img2.jpg'}/></div>
-                    <div><img className="img" src= {'assets/img/img4.jpg'}/></div>
-                    <div><img className="img" src= {'assets/img/img3.jpg'}/></div>
-                    <div><img className="img" src= {'assets/img/img5.jpg'}/></div>
-                    <div><img className="img" src= {'assets/img/img6.jpg'}/></div>
-                    <div><img className="img" src= {'assets/img/img7.jpg'}/></div>
+                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide"/></div>
+                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide 2"/></div>
+                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide 3"/></div>
                 </OwlCarousel>
             </div>
             <section className="section">
