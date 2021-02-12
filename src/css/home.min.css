@@ -1,1 +1,1 @@
-.slideHome{width:100%}
+.slideHome{width:100%;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;max-height:500px}.slideHome .owl-carousel{max-height:500px}.slideHome .owl-carousel .owl-stage-outer{max-height:500px}.slideHome .slideImg{max-height:500px}

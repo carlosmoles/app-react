@@ -3,64 +3,228 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  height: 70px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
   z-index: 2;
+
+  .btn-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #73a3ba;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .btn-normal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    font-size: 0.9rem;
+  }
+  .btn-normal:hover{
+    background-color: #73a3ba;
+  }
+  .barra-promociones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .separador{
+    height: 40%;
+    width: 1px;
+    border-left: 1px #ffffff solid;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
+    margin:0px;
+    align-self: center;
+  }
+
+  .blue{
+    background-color: #2a8daa;
+  }
+  .yelow{
+    background-color: #fcca56;
+  }
+  .pink{
+    background-color: #dc569c;
+  }
+
+  .App-topBar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+    .App-soporte{
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      order: 0;
+    }
+    .App-actions{
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      box-sizing: border-box;
+      order:1;
+      .horario{
+        width: 40%;
+        margin: 0;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 0.8rem;
+        color: #ffffff;
+      }
+      .action{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        svg{
+          fill: #ffffff;
+        }
+      }
+      .action:hover{
+        cursor: pointer;
+      }
+      .buscador{
+        width: 100px;
+      }
+      .cuenta{
+        width: 125px;
+      }
+      .carrito{
+        width: 125px;
+      }
+      .App-btn-menu{
+        width: 60px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
   .App-logo{
-    width: 250px;
+    position: absolute;
+    bottom: 4px;
+    left: 5%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    .logo{
-      width: 100%;
-      max-width: 180px;
-      height: auto;
-    }
-  }
-  .App-menu{
-    width: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    .itemsMenu{
-      width: 85%;
+    .Link-logo{
+      width: auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      .logo{
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+      }
+    }
+  }
+  .App-menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right:10px;
+    position: relative;
+    .itemsMenu{
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       box-sizing: border-box;
+      z-index: 1;
       .item{
+        width: 100%;
+        max-width: 115px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         text-decoration: none;
         font-weight: 600;
-        color: #333333;
-        padding: 10px 15px;
+        padding: 0px;
+        height: 50px;
         .iconItem{
           display: none;
         }
         .nomItem{
           width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: #333333;
+          font-size: 0.9rem;
+        }
+        .subItems{
+          position: absolute;
+          display: none;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          width: 100%;
+          height: 100%;
+          max-height: 300px;
+          min-height: 300px;
+          background-color: #ffffff;
+          z-index: 0;
+          top: 50px;
+          left: 0px;
+          .subItem{
+            width: 25%;
+            color: #333333;
+          }
         }
       }
       .item:hover{
-        border-bottom: 3px solid #333333;
+        -webkit-box-shadow: inset 0px -3px 0px 0px rgb(42, 141, 170);
+        -moz-box-shadow:    inset 0px -3px 0px 0px rgb(42, 141, 170);
+        box-shadow:         inset 0px -3px 0px 0px rgb(42, 141, 170);
+        .subItems{
+          display: flex;
+        }
       }
     }
 
     .idiomas{
-      width: 13%;
-      display: flex;
+      width: 100px;
+      display: none;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
@@ -95,36 +259,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .App-actions{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border-left: 2px solid #e7e7e7;
-    .action{
-      width: 50px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0px 10px;
-      box-sizing: border-box;
-    }
-    .action:hover{
-      background-color: #2a8daa;
-      cursor: pointer;
-      svg{
-        fill: #ffffff;
-      }
-    }
-    .App-btn-menu{
-      width: 10%;
-      display: none;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
 
 /*************** ANIMACION TOGLE BUTTON******************/
@@ -133,7 +267,7 @@
   z-index:1111;
   height:35px;
   width:50px;
-  padding:0px 0px 0px 5px;
+  padding:0px 0px 0px 0px;
   cursor: pointer;
 }
 
@@ -146,7 +280,7 @@
   top: 50%;
   left: 50%;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .btn-menu span, .btn-menu span::before, .btn-menu span::after {
@@ -154,7 +288,7 @@
   width: 35px;
   left: 0px;
   height: 3px;
-  background-color: #bfbfbf;
+  background-color: #ffffff;
   outline: 1px solid transparent;
   -webkit-transition-property: background-color, -webkit-transform;
   -moz-transition-property: background-color, -moz-transform;
@@ -172,12 +306,12 @@
 .btn-menu span::before {
   top: -10px;
   width:35px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .btn-menu span::after {
   top: 10px;
   width: 35px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .btn-menu.clicked span {
   background-color: transparent;
@@ -198,26 +332,38 @@
   transform: translateY(-10px) rotate(-45deg);
 }
 .btn-menu.clicked span:before, .menu.clicked span:after {
-  background-color: #bfbfbf;
+  background-color: #ffffff;
 }
 .btn-menu:hover {
   cursor: pointer;
 }
 /*************** FIN ANIMACION TOGLE BUTTON******************/
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1280px){
   .App-header {
-    height: auto;
+    height: 50px;
     z-index: 2;
+    justify-content: space-between;
     .App-logo{
-      width: 80%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      padding: 0px 0px 0px 5px;
-      .logo{
-        width: auto;
-        max-height: 30px;
+      left: 1%;
+      bottom: 9px;
+      .Link-logo{
+        .logo{
+          width: auto;
+          max-height: 30px;
+        }
+      }
+    }
+    .App-topBar{
+      padding: 0px 1%;
+      .App-soporte{
+        display: none;
+      }
+      .App-actions{
+        width: 85%;
+        .App-btn-menu{
+          display: flex;
+        }
       }
     }
     .App-menu{
@@ -235,36 +381,42 @@
       height: 100vh;
       background-color: #ffffff;
       z-index: 3;
-      top: 80px;
+      top: 50px;
       left:0px;
       align-content: flex-start;
       justify-content: space-around;
       padding: 10px;
-      .item{
-        width: 48%;
-        min-height: 80px;
-        box-sizing: border-box;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        border: #d2d2d2 1px solid;
-        border-radius: 2px;
-        margin: 1%;
-        .iconItem{
-          display: block;
-        }
-        .nomItem{
-          width: 100%;
-          margin-top: 5px;
-          text-align: center;
-          font-size: 0.9rem;
-        }
-      }
-      .idiomas{
+      .itemsMenu{
         width: 100%;
-        padding: 5px;
+        .item{
+          width: 23%;
+          max-width: 100%;
+          min-height: 80px;
+          box-sizing: border-box;
+          padding: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+          border: #d2d2d2 1px solid;
+          border-radius: 2px;
+          margin: 1%;
+          .iconItem{
+            display: block;
+          }
+          .nomItem{
+            position: unset;
+            height: unset;
+            width: 100%;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+          }
+        }
+        .idiomas{
+          width: 100%;
+          padding: 5px;
+        }
       }
     }
     .App-menu.show{
@@ -277,39 +429,6 @@
       -moz-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       -o-transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
       transition: transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    }
-    .App-buscador{
-      width: 50px;
-      height: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .buscador{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      }
-    }
-    .App-actions{
-      width: 100%;
-      height: 40px;
-      background-color: #ffffff;
-      padding: 0px 0px;
-      .action{
-        width: 20%;
-        cursor: pointer;
-        border: 0px;
-        svg{
-          width: 25px;
-        }
-      }
-      .App-btn-menu {
-        width: 20%;
-        display: flex;
-
-      }
     }
   }
 }

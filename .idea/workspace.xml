@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27e1ab66-b1fb-43f3-8b68-3738a6daa35c" name="Default Changelist" comment="">
+    <list default="true" id="27e1ab66-b1fb-43f3-8b68-3738a6daa35c" name="Default Changelist" comment="header">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/header.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/home.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tutiendadivertida" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyecto_intex" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,7 +82,8 @@
       <workItem from="1612526899697" duration="3110000" />
       <workItem from="1612771743501" duration="9666000" />
       <workItem from="1612858380099" duration="2031000" />
-      <workItem from="1612866152891" duration="7914000" />
+      <workItem from="1612866152891" duration="11264000" />
+      <workItem from="1613030675629" duration="21743000" />
     </task>
     <task id="LOCAL-00001" summary="header">
       <created>1612890992479</created>
@@ -88,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612890992479</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="header">
+      <created>1612891810192</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612891810192</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

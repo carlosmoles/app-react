@@ -1,3 +1,18 @@
 .slideHome{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 500px;
+  .owl-carousel{
+    max-height: 500px;
+    .owl-stage-outer{
+      max-height: 500px;
+    }
+  }
+  .slideImg{
+    max-height: 500px;
+  }
+
 }

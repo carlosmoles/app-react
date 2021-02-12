@@ -8,10 +8,10 @@ const Home = () => {
     return(
         <div className="content-principal">
             <div className="slideHome">
-                <OwlCarousel items={3} className="owl-theme" loop nav  margin={8}>
-                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide"/></div>
-                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide 2"/></div>
-                    <div><img className="img" src= {require('../images/logos/image.svg').default} alt="image slide 3"/></div>
+                <OwlCarousel items={1} className="owl-theme" loop nav  margin={8}>
+                    <div><img className="slideImg" src= {require('../images/logos/image.svg').default} alt="image slide"/></div>
+                    <div><img className="slideImg" src= {require('../images/logos/image.svg').default} alt="image slide 2"/></div>
+                    <div><img className="slideImg" src= {require('../images/logos/image.svg').default} alt="image slide 3"/></div>
                 </OwlCarousel>
             </div>
             <section className="section">
